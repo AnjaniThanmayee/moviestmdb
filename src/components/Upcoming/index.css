@@ -1,0 +1,23 @@
+.upcoming-movies {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+  }
+  
+  .movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .movie-item {
+    margin: 10px;
+  }
+  
+  .movie-poster {
+    width: 220px;
+    height: auto;
+  }
+  
+ 

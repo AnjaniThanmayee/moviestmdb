@@ -1,0 +1,80 @@
+
+   .navbar {
+    background-color: #36454F;
+    color: #fff;
+    height: 7vh;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  .navbar-logo a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navbar-toggle {
+    display: none; /* Hide toggle button by default */
+    cursor: pointer;
+  }
+  
+  .navbar-items ul {
+    z-index: 1;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar-items li {
+    margin-left: 20px;
+  }
+  
+  .navbar-items li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  @media screen and (max-width: 750px) {
+    .navbar-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .navbar-items{
+        position: relative;
+        overflow: hidden;
+    }
+  
+    .navbar-items ul {
+    background-color: #36454F;
+      
+      flex-direction: column;
+      display: none; 
+    }
+  
+    .navbar-items li {
+
+      margin: 10px 0;
+    }
+  
+    .navbar-items li:first-child {
+      margin-top: 0;
+    }
+  
+    .navbar-toggle {
+      display: block; /* Show toggle button on smaller screens */
+    }
+  
+    .navbar-items.open ul {
+
+      display: flex; /* Show menu items when menu is open */
+    }
+  }
+  
